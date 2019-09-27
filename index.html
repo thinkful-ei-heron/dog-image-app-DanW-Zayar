@@ -1,28 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Dog Images</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <div class="app">
+      <section class="random-form">
         <form class="js-random">
-            <label>Number of random images to display</label>
-            <input id="number" type="text" placeholder="3">
-            <button type="submit">Submit</button>
+          <label>Number of random images to display</label>
+          <input id="number" type="text" placeholder="3" />
+          <button type="submit">Submit</button>
         </form>
-        <section class="random-images">
-
-        </section>
-        <section class="single-breed">
-
-        </section>
+      </section>
+      <section class="breed-form">
+        <form class="js-breed">
+          <label>OR breed to display random image of.</label>
+          <select name="breeds" class="breeds"> </select>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+      <section class="random-images"></section>
+      <section class="single-breed"></section>
     </div>
-    <script src='index.js'></script>
-</body>
+    <script src="random.js"></script>
+    <script src="breed.js"></script>
+  </body>
 </html>
